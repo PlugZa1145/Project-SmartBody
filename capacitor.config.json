@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "smartbody",
+	"webDir": "www",
+	"bundledWebRuntime": false
+}

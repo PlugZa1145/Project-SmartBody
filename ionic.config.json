@@ -1,0 +1,7 @@
+{
+  "name": "smartbody",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

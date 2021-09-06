@@ -1,0 +1,43 @@
+<ion-toolbar>
+  <ion-buttons slot="start">
+      <ion-back-button defaultHref="home"></ion-back-button>
+    </ion-buttons>
+</ion-toolbar>
+<ion-content>
+  <div id="container">
+    <div style="text-align: center; font-size: larger; font-weight: 600;" class="ion-padding">
+      <ion-text>เข้าสู่ระบบ</ion-text>
+    </div>
+
+    <!-- username input -->
+    <div> 
+      <ion-item lines="none" class="input">
+        <ion-icon name="person"></ion-icon>
+        <ion-input type="text" placeholder="Username"></ion-input>
+      </ion-item>
+    </div>
+
+    <!-- password input -->
+    <div>
+      <ion-item lines="none" class="input">
+        <ion-icon name="key"></ion-icon>
+        <ion-input [type]="showpass ? 'text' : 'password' " placeholder="Password"></ion-input>
+        <ion-icon [name]="passtoggleicon" (click)="functioniconshowpass()"></ion-icon>
+      </ion-item>
+    </div>
+
+    <!-- btn login -->
+    <div>
+      <ion-button expand="full" shape="round">เข้าสู่ระบบ</ion-button>
+    </div>
+
+    <div>
+      <p>Not a member ?
+        <ion-text color="primary">Resister now :)</ion-text>
+      </p>
+    </div>
+
+
+
+  </div>
+</ion-content>

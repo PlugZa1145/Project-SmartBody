@@ -1,0 +1,50 @@
+#container {
+    text-align: center;
+    font-size: 24px;
+    color: #ff0b0b;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  #container strong {
+    font-size: 20px;
+    line-height: 26px;
+  }
+  
+  #container p {
+    font-size: 16px;
+    line-height: 22px;
+  
+    color: #8c8c8c;
+  
+    margin: 0;
+  }
+  
+  #container a {
+    text-decoration: none;
+  }
+
+  ion-img{
+      width: 80%;
+      margin-left: 10%;
+  }
+
+.input{
+    --ion-background-color:white;
+    border-style: solid;
+    border-radius: 10px;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 5%;
+
+}
+
+ion-button{
+  width: 80%;
+  margin-left: 10%;
+  --background:#4400ff;
+}
