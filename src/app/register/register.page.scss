@@ -48,3 +48,7 @@ ion-button{
   margin-left: 10%;
   --background:#4400ff;
 }
+
+ion-content {
+  --background: url(/assets/icon/UU.png) no-repeat center/cover fixed;
+}

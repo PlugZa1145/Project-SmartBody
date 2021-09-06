@@ -12,3 +12,7 @@
   ion-content.background{
       --ion-background-color: #72b0f7;   
   }
+
+  ion-content {
+    --background: url(/assets/icon/WT.jpg) no-repeat center/cover fixed;
+  }

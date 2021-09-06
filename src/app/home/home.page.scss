@@ -37,3 +37,11 @@ ion-button{
   margin-left: 10%;
   --background:#cf0303;
 }
+
+ion-content {
+  --background: url(/assets/icon/ur.png) no-repeat center/cover fixed;
+}
+
+h1 {
+  color: rgb(255, 0, 0);
+}
