@@ -1,0 +1,18 @@
+.center{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+  ion-button{
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    --background:#0033a1;
+  }
+  ion-content.background{
+      --ion-background-color: #72b0f7;   
+  }
+
+  ion-content {
+    --background: url(/assets/icon/WT.jpg) no-repeat center/cover fixed;
+  }
