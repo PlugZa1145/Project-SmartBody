@@ -10,8 +10,61 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding class="background"> 
-  <div id="container">
+<ion-content padding class="background">
+
+  <div *ngFor="let item of x" >
+
+    <ion-img [src]="item.img"
+      class="center" style="width: 200px"></ion-img>
+    <div>
+      <!--<div>{{item.name}}</div>
+      <div>{{item.id}}</div></div>
+      <ion-button color="primary" expand="full" shape="round" routerLink="/downward">downward</ion-button>
+       -->
+      <ion-button color="primary" expand="full" shape="round" routerLink="{{item.Link}}">{{item.name}}</ion-button>
+    </div>
+
+  
+    
+
+    <!-- <ion-img src="https://i1.wp.com/www.fitmesport.com/wp-content/uploads/2020/08/Warrior-Pose-2.jpg"
+      class="center" style="width: 200px"></ion-img><br>
+    <div>
+      <ion-button color="primary" expand="full" shape="round" routerLink="/warrior">Warrior Pose</ion-button>
+    </div>
+
+    <ion-img src="https://i1.wp.com/www.fitmesport.com/wp-content/uploads/2020/08/Tree-Pose-2.jpg"
+      class="center" style="width: 200px"></ion-img><br>
+    <div>
+      <ion-button color="primary" expand="full" shape="round" routerLink="/tree">Tree Pose</ion-button>
+    </div>
+
+    <ion-img src="https://i1.wp.com/www.fitmesport.com/wp-content/uploads/2020/08/triangle-pose.jpg"
+      class="center" style="width: 200px"></ion-img><br>
+    <div>
+      <ion-button color="primary" expand="full" shape="round" routerLink="/triangle">Triangle Pose</ion-button>
+    </div>
+    
+    <ion-img src="https://i1.wp.com/www.fitmesport.com/wp-content/uploads/2020/08/Bridge-Pose-3.jpg"
+      class="center" style="width: 200px"></ion-img><br>
+    <div>
+      <ion-button color="primary" expand="full" shape="round" routerLink="/bridge">Bridge Pose</ion-button>
+    </div>
+
+    <ion-img src="https://i1.wp.com/www.fitmesport.com/wp-content/uploads/2020/08/Cobra-pose.jpg"
+      class="center" style="width: 200px"></ion-img><br>
+    <div>
+      <ion-button color="primary" expand="full" shape="round" routerLink="/cobra">Cobra Pose</ion-button>
+    </div> -->
+
+  </div>
+
+  
+
+  
+
+
+  <!-- <div id="container">
     <ion-img src="https://i1.wp.com/www.fitmesport.com/wp-content/uploads/2020/08/Downward-Facing-Dog.jpg"
       class="center" style="width: 200px"></ion-img><br>
     <div>
@@ -43,5 +96,5 @@
       <ion-button color="primary" expand="full" shape="round" routerLink="/cobra">Cobra Pose</ion-button>
     </div><br>
    
-  </div>
+  </div> -->
 </ion-content>
