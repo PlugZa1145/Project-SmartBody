@@ -50,7 +50,8 @@ const routes: Routes = [
   {
     path: 'yoga',
     loadChildren: () => import('./yoga/yoga.module').then( m => m.YogaPageModule)
-  },  {
+  },
+  {
     path: 'downward',
     loadChildren: () => import('./downward/downward.module').then( m => m.DownwardPageModule)
   },

@@ -15,7 +15,7 @@ export class YogaPage implements OnInit {
   x = [
     {
       img: "https://i1.wp.com/www.fitmesport.com/wp-content/uploads/2020/08/Downward-Facing-Dog.jpg" ,
-      name: "downward",
+      name: "Downward Facing Dog",
       Link:"/downward"
     },{
       img: "https://i1.wp.com/www.fitmesport.com/wp-content/uploads/2020/08/Warrior-Pose-2.jpg",

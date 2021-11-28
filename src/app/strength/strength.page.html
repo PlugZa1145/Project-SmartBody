@@ -10,37 +10,17 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content padding class="background"> 
-  <div id="container">
-    <ion-img src="https://www.t-nation.com/wp-content/uploads/2019/06/5-Push-Ups-for-High-Performance.jpg"
-      class="center" style="width: 200px"></ion-img><br>
+<ion-content padding class="background">
+
+  <div *ngFor="let item of x" >
+
+    <ion-img [src]="item.img"
+      class="center" style="width: 200px"></ion-img>
     <div>
+      <!--<div>{{item.name}}</div>
+      <div>{{item.id}}</div></div>
       <ion-button color="primary" expand="full" shape="round" routerLink="/push">Push Up</ion-button>
-    </div><br>
-    <ion-img src="https://www.bodybuilding.com/images/2018/december/one-tip-to-maximize-your-dumbbell-row-header-960x540.jpg"
-      class="center" style="width: 200px"></ion-img><br>
-    <div>
-      <ion-button color="primary" expand="full" shape="round" routerLink="/dumbbell-row">Dumbbell Row</ion-button>
-    </div><br>
-    <ion-img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/how-to-tricep-dips-1597139585.jpg"
-      class="center" style="width: 200px"></ion-img><br>
-    <div>
-      <ion-button color="primary" expand="full" shape="round" routerLink="/tricep">Tricep Dips</ion-button>
-    </div><br>
-    <ion-img src="https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/701/articles/2015/12/54-stepups-1515613864.jpg"
-      class="center" style="width: 200px"></ion-img><br>
-    <div>
-      <ion-button color="primary" expand="full" shape="round" routerLink="/step-ups">Step-ups</ion-button>
-    </div><br>
-    <ion-img src="https://betterme.world/articles/wp-content/uploads/2020/07/shutterstock_1776379388-740x494.jpg"
-      class="center" style="width: 200px"></ion-img><br>
-    <div>
-      <ion-button color="primary" expand="full" shape="round" routerLink="/squats">Squats</ion-button>
-    </div><br>
-    <ion-img src="https://i0.wp.com/post.healthline.com/wp-content/uploads/2019/06/Lunge_Fitness_Track_Female-1296x728-Header-1296x728.jpg?w=1155&h=1528"
-      class="center" style="width: 200px"></ion-img><br>
-    <div>
-      <ion-button color="primary" expand="full" shape="round" routerLink="/walking">Walking lunges</ion-button>
-    </div><br>
-  </div>
-</ion-content>
+       -->
+      <ion-button color="primary" expand="full" shape="round" routerLink="{{item.Link}}">{{item.name}}</ion-button>
+    </div>
+
