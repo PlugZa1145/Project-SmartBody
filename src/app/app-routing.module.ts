@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'yoga',
+    redirectTo: 'cardio',
     pathMatch: 'full'
   },
   {
@@ -27,10 +27,7 @@ const routes: Routes = [
     path: 'push',
     loadChildren: () => import('./push/push.module').then( m => m.PushPageModule)
   },
-  {
-    path: 'dumbbell-row',
-    loadChildren: () => import('./dumbbell-row/dumbbell-row.module').then( m => m.DumbbellRowPageModule)
-  },
+  
   {
     path: 'tricep',
     loadChildren: () => import('./tricep/tricep.module').then( m => m.TricepPageModule)
@@ -75,6 +72,40 @@ const routes: Routes = [
     path: 'cobra',
     loadChildren: () => import('./cobra/cobra.module').then( m => m.CobraPageModule)
   },
+  {
+    path: 'cardio',
+    loadChildren: () => import('./cardio/cardio.module').then( m => m.CardioPageModule)
+  },
+  {
+    path: 'burpees',
+    loadChildren: () => import('./burpees/burpees.module').then( m => m.BurpeesPageModule)
+  },
+  {
+    path: 'dumbbell-row',
+    loadChildren: () => import('./dumbbell-row/dumbbell-row.module').then( m => m.DumbbellRowPageModule)
+  },  {
+    path: 'high-intensity',
+    loadChildren: () => import('./high-intensity/high-intensity.module').then( m => m.HighIntensityPageModule)
+  },
+  {
+    path: 'russian',
+    loadChildren: () => import('./russian/russian.module').then( m => m.RussianPageModule)
+  },
+  {
+    path: 'glute',
+    loadChildren: () => import('./glute/glute.module').then( m => m.GlutePageModule)
+  },
+  {
+    path: 'high',
+    loadChildren: () => import('./high/high.module').then( m => m.HighPageModule)
+  },
+  {
+    path: 'highkicks',
+    loadChildren: () => import('./highkicks/highkicks.module').then( m => m.HighkicksPageModule)
+  },
+
+
+
 
 
 ];
