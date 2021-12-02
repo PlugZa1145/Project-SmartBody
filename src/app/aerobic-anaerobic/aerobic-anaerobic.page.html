@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar color="tertiary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="menu"></ion-back-button>
+    </ion-buttons>
+    <ion-title
+      style="text-align: left; font-size: 25px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-style: oblique;">
+      Aerobic&Anaerobic
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding class="background">
+
+  <div *ngFor="let item of x" >
+
+    <ion-img [src]="item.img"
+      class="center" style="width: 200px"></ion-img>
+    <div>
+      <!--<div>{{item.name}}</div>
+      <div>{{item.id}}</div></div>
+      <ion-button color="primary" expand="full" shape="round" routerLink="/push">Push Up</ion-button>
+       -->
+      <ion-button color="primary" expand="full" shape="round" routerLink="{{item.Link}}">{{item.name}}</ion-button>
+    </div>
+

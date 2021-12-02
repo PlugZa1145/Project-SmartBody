@@ -8,7 +8,7 @@ const routes: Routes = [
   },
   {
     path: '',
-    redirectTo: 'cardio',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
@@ -83,7 +83,8 @@ const routes: Routes = [
   {
     path: 'dumbbell-row',
     loadChildren: () => import('./dumbbell-row/dumbbell-row.module').then( m => m.DumbbellRowPageModule)
-  },  {
+  },
+  {
     path: 'high-intensity',
     loadChildren: () => import('./high-intensity/high-intensity.module').then( m => m.HighIntensityPageModule)
   },
@@ -102,6 +103,26 @@ const routes: Routes = [
   {
     path: 'highkicks',
     loadChildren: () => import('./highkicks/highkicks.module').then( m => m.HighkicksPageModule)
+  },
+  {
+    path: 'menu',
+    loadChildren: () => import('./menu/menu.module').then( m => m.MenuPageModule)
+  },
+  {
+    path: 'aerobic-anaerobic',
+    loadChildren: () => import('./aerobic-anaerobic/aerobic-anaerobic.module').then( m => m.AerobicAnaerobicPageModule)
+  },
+  {
+    path: 'aerobic',
+    loadChildren: () => import('./aerobic/aerobic.module').then( m => m.AerobicPageModule)
+  },
+  {
+    path: 'anaerobic',
+    loadChildren: () => import('./anaerobic/anaerobic.module').then( m => m.AnaerobicPageModule)
+  },
+  {
+    path: 'end-aerobic-anaerobic',
+    loadChildren: () => import('./end-aerobic-anaerobic/end-aerobic-anaerobic.module').then( m => m.EndAerobicAnaerobicPageModule)
   },
 
 
