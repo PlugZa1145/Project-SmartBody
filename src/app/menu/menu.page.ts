@@ -17,10 +17,6 @@ export class MenuPage implements OnInit {
       name: "Strength",
       Link:"/strength"
     },{
-      img: "https://lh3.googleusercontent.com/proxy/1lFkK09kIVR9K9V0Q56BFiiTX5w83jC7hC-wIDgMihaOu9y1meLpWRdpkj4roFPxeKJFPfXzUGYqRfp9bIK49ONUUucRmeFLm0QfOioxh8tZwNB_XUfK_0EwzTsE26EoZ6Z_sLAnH16bL5hX-zTWuGSDve7UKUCgdA",
-      name: "Cardio",
-      Link:"/cardio"
-    },{
       img: "https://image.sistacafe.com/images/uploads/summary/image/1020/1443076680-Tea-Tree-Yoga.jpg",
       name: "Yoga",
       Link:"/yoga"
