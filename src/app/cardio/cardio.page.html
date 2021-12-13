@@ -11,15 +11,16 @@
 </ion-header>
 
 <ion-content padding class="background">
+  <!-- ห้ามลืม -->
+  <div *ngFor="let item of items|async"> 
 
-  <div *ngFor="let item of x" >
-
-    <ion-img [src]="item.img"
-      class="center" style="width: 200px"></ion-img>
+    <ion-img [src]="item.imgurl" class="center" style="width: 200px"></ion-img>
     <div>
       <!--<div>{{item.name}}</div>
       <div>{{item.id}}</div></div>
-      <ion-button color="primary" expand="full" shape="round" routerLink="/burpees">Burpees</ion-button>
+      <ion-button color="primary" expand="full" shape="round" routerLink="/push">Push Up</ion-button>
        -->
-      <ion-button color="primary" expand="full" shape="round" routerLink="{{item.Link}}">{{item.name}}</ion-button>
+      <ion-button color="primary" expand="full" shape="round" routerLink="{{item.Link}}">{{item.btn_name}}</ion-button>
     </div>
+  </div>
+</ion-content>
